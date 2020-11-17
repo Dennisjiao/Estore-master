@@ -284,9 +284,9 @@
         function email_complete(eid) {
             var inputVal = $(eid).val();
             var myVal = inputVal.split("@");
-            var email_adress = new Array(myVal + "@qq.com", myVal + "@163.com", myVal + "@sina.com", myVal + "@gmail.com", myVal + "@126.com",
+            var email_adress = [myVal + "@qq.com", myVal + "@163.com", myVal + "@sina.com", myVal + "@gmail.com", myVal + "@126.com",
                 myVal + "@hotmail.com", myVal + "@vip.qq.com", myVal + "@foxmail.com", myVal + "@sina.cn", myVal + "@yeah.net",
-                myVal + "@sohu.com", myVal + "@live.cn", myVal + "@outlook.com", myVal + "@aliyun.com", myVal + "@yahoo.com");
+                myVal + "@sohu.com", myVal + "@live.cn", myVal + "@outlook.com", myVal + "@aliyun.com", myVal + "@yahoo.com"];
             $(eid).autocomplete({
                 source: email_adress
             });

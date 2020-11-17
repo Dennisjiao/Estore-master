@@ -16,7 +16,7 @@ import javax.mail.internet.MimeMessage;
 public class MailUtils {
 
     public static void sendMail(String email,String emailInfo)
-            throws AddressException, MessagingException, GeneralSecurityException {
+            throws MessagingException, GeneralSecurityException {
         Properties prop=new Properties();
         prop.put("mail.host","smtp.163.com" );
         prop.put("mail.transport.protocol", "smtp");
@@ -38,7 +38,7 @@ public class MailUtils {
         //5.发送电子邮件
         ts.sendMessage(msg, msg.getAllRecipients());
     }
-    private static Message createSimpleMail(Session session, String email, String emailInfo) throws AddressException, MessagingException {
+    private static Message createSimpleMail(Session session, String email, String emailInfo) throws MessagingException {
         MimeMessage mm=new MimeMessage(session);
         //设置发件人
         mm.setFrom(new InternetAddress("ruipeng_jiao@163.com"));

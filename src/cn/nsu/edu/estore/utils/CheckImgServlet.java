@@ -32,7 +32,7 @@ import javax.servlet.http.HttpServletResponse;
 public class CheckImgServlet extends HttpServlet {
 
     // 集合中保存所有成语
-    private List<String> words = new ArrayList<String>();
+    private final List<String> words = new ArrayList<String>();
 
     @Override
     public void init() throws ServletException {

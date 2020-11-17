@@ -16,7 +16,7 @@ import com.sun.image.codec.jpeg.JPEGImageEncoder;
 
 public class UploadPic {
 
-    private static String path = "c:\\upload";
+    private static final String path = "c:\\upload";
 
     //上传图片
     public static void savePic(FileItem item, String filename) throws IOException {
@@ -32,7 +32,7 @@ public class UploadPic {
         //创建一个文件输出流
         FileOutputStream out = new FileOutputStream(path + "\\" + filename);
         //创建一个缓冲区
-        byte buffer[] = new byte[1024];
+        byte[] buffer = new byte[1024];
         //判断输入流中的数据是否已经读完的标识
         int len = 0;
         //循环将输入流读入到缓冲区当中，(len=in.read(buffer))>0就表示in里面还有数据

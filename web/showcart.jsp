@@ -51,7 +51,7 @@ function changeCount(id, count, pnum) {
 
 		location.href = "${pageContext.request.contextPath}/ChangeCountServlet?id="
 				+ id + "&count=" + count;
-	};
+	}
 	
 	//*2.************点击+ —  实现对商品数量的操作id是商品的id，count,是要改变的数量.数量有赠有减，重点对数据的边界进行操作,此处应该来个666	START*****************	
 	
@@ -79,7 +79,7 @@ function changeCount(id, count, pnum) {
 			}
 
 		}
-	};
+	}
   //3.键盘直接输入商品数量		END.......................
 
 	
@@ -113,7 +113,7 @@ function changeCount(id, count, pnum) {
 			location.href="${pageContext.request.contextPath}/RemoveSelectProductFromCartServlet?"+param;
 			
 		}
-	};
+	}
 	//5.批量删除END
 	
 	

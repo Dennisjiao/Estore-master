@@ -118,7 +118,7 @@ public class ProductAddServlet extends HttpServlet {
 
     private boolean isPicture(String fileName) {
         String[] exts = {"jpg","bmp","png","jpeg","gif"};
-        String ext = fileName.substring(fileName.lastIndexOf(".")+1, fileName.length());
+        String ext = fileName.substring(fileName.lastIndexOf(".")+1);
         for (int i = 0; i < exts.length; i++) {
             if (ext.toLowerCase().equals(exts[i])) {
                 return true;

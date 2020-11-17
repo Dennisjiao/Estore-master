@@ -16,7 +16,7 @@
 			location.href = "${pageContext.request.contextPath}/ProductDelByIdServlet?id="
 					+ id;
 		}
-	};
+	}
 
 	function change() {
 		//1.得到id为main的这个checkbox
@@ -31,7 +31,7 @@
 		for ( var i = 0; i < cks.length; i++) {
 			cks[i].checked = flag;
 		}
-	};
+	}
 	
 	function sendDel(){
 		var flag = window.confirm("确认删除吗");
@@ -43,7 +43,7 @@
 		
 		var cks = document.getElementsByName("ck");
 		
-	};
+	}
 	
 	function sel() {
 		var msg = document.getElementById("msg").value;

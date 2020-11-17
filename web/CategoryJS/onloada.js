@@ -29,7 +29,7 @@ function select_onelevel(){
 			}
 		}
 	});
-};
+}
 function selsct_twolevel(){
 	var sa = document.getElementById("twolevel");
 	var twolevelcode = sa.value;

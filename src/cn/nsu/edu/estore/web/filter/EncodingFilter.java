@@ -2,6 +2,7 @@ package cn.nsu.edu.estore.web.filter;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
 import java.util.Map;
 
 import javax.servlet.Filter;
@@ -43,7 +44,7 @@ public class EncodingFilter implements Filter {
 //自定义request对象
 class MyRequest extends HttpServletRequestWrapper {
 
-    private HttpServletRequest request;
+    private final HttpServletRequest request;
 
     private boolean hasEncode;
 
@@ -74,13 +75,9 @@ class MyRequest extends HttpServletRequestWrapper {
                     String[] values = parameterMap.get(parameterName);
                     if (values != null) {
                         for (int i = 0; i < values.length; i++) {
-                            try {
-                                // 处理get乱码
-                                values[i] = new String(values[i]
-                                        .getBytes("ISO-8859-1"), "utf-8");
-                            } catch (UnsupportedEncodingException e) {
-                                e.printStackTrace();
-                            }
+                            // 处理get乱码
+                            values[i] = new String(values[i]
+                                    .getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
                         }
                     }
                 }

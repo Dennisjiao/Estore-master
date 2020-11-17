@@ -26,7 +26,7 @@ function bg_canvas() {
         this.speedX = fnRandom(0,4)>2?speed:-speed;
         this.speedY = fnRandom(0,4)>2?speed:-speed;
         //颜色
-        var col=new Array ("#a7a9ed","#a7c3f3","#cbccf6","#8097ec","#c7b4fd");
+        var col=["#a7a9ed","#a7c3f3","#cbccf6","#8097ec","#c7b4fd"];
         this.color = col[fnRandom(-1,4)];
     }
     Round.prototype.draw = function(){

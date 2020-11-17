@@ -19,11 +19,11 @@ window.onload=function(){
 function change() {
 	document.getElementById("cimg").src = "${pageContext.request.contextPath}/checkImg?time="
 			+ new Date().getTime();
-};
+}
 
 function findProductById(id){
 	location.href="http://localhost:8080/Estore_Web_exploded/ProductFindByIdServlet?id="+id;
-};
+}
 function phone(obj) {
 	location.href="${pageContext.request.contextPath}/FindCategoryServlet?name="+encodeURIComponent(encodeURIComponent(obj));
 }

@@ -8,7 +8,7 @@ import javax.sql.DataSource;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 public class DataSourceUtils {
-    private static DataSource dataSource = new ComboPooledDataSource();
+    private static final DataSource dataSource = new ComboPooledDataSource();
 
     private static final ThreadLocal<Connection> tl = new ThreadLocal<Connection>();
 
