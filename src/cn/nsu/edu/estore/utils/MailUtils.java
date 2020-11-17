@@ -44,7 +44,7 @@ public class MailUtils {
         mm.setFrom(new InternetAddress("ruipeng_jiao@163.com"));
         //设置收件人
         mm.setRecipient(Message.RecipientType.TO, new InternetAddress(email));
-        mm.setSubject("刘佳雷大傻逼");
+        mm.setSubject("邮箱验证测试");
         mm.setContent(emailInfo, "text/html;charset=gbk");
         return mm;
     }
