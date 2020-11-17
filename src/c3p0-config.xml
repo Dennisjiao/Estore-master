@@ -7,3 +7,4 @@
 		<property name="jdbcUrl">jdbc:mysql://localhost:3306/estore?characterEncoding=utf-8&amp;useSSL=false</property>
 	</default-config> 
 </c3p0-config> 
+//asdawda
