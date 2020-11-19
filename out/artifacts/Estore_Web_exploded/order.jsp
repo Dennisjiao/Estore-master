@@ -83,11 +83,15 @@
    <div>
        <ul>
            <li>开发人员1</li>
-           <li>唐宗博</li>
+           <li>焦瑞鹏</li>
        </ul>
        <ul>
            <li>开发人员2</li>
-           <li>辜鹏</li>
+           <li>刘佳雷</li>
+       </ul>
+       <ul>
+           <li>开发人员3</li>
+           <li>谢晨祎</li>
        </ul>
     </div>
 </footer>

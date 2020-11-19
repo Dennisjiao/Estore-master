@@ -18,13 +18,13 @@ function change() {
 			+ new Date().getTime();
 }
 function findProductById(id){
-	location.href="http://localhost:8080/Estore_Web_exploded/ProductFindByIdServlet?id="+id;
+	location.href="http://localhost:8099/Estore_Web_exploded/ProductFindByIdServlet?id="+id;
 }
 function showck(obj) {
-	location.href="http://localhost:8080/Estore_Web_exploded/ProductFindByPageCodeServlet?code="+obj;
+	location.href="http://localhost:8099/Estore_Web_exploded/ProductFindByPageCodeServlet?code="+obj;
 }
 function tocart() {
-	location.href="http://localhost:8080/Estore_Web_exploded/showcart.jsp";
+	location.href="http://localhost:8099/Estore_Web_exploded/showcart.jsp";
 }
 </script>
 </head>
@@ -184,11 +184,15 @@ function tocart() {
    <div>
        <ul>
            <li>开发人员1</li>
-           <li>唐宗博</li>
+           <li>焦瑞鹏</li>
        </ul>
        <ul>
            <li>开发人员2</li>
-           <li>辜鹏</li>
+           <li>刘佳雷</li>
+       </ul>
+       <ul>
+           <li>开发人员3</li>
+           <li>谢晨祎</li>
        </ul>
     </div>
 </footer>
