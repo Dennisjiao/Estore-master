@@ -33,7 +33,7 @@ public class CheckImgServlet extends HttpServlet {
 
     // 集合中保存所有成语
     private final List<String> words = new ArrayList<String>();
-
+//乱码解决方案（修改字体修改字体大小或者数字）
     @Override
     public void init() throws ServletException {
         // 初始化阶段，读取new_words.txt
