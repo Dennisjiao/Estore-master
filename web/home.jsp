@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>ORZ主页</title>
 <link rel="stylesheet" type="text/css" href="home/CSS/jquery-ui.css">
 <link rel="stylesheet" type="text/css" href="home/CSS/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="home/CSS/main.css">
@@ -45,14 +45,23 @@ function tocart() {
         <a href="javascript:void(0)" onclick="phone('笔记本')">笔记本</a>
         <a href="javascript:void(0)" onclick="phone('配件')">配件</a>
         <i class="carts" onclick="tocart()"></i>
-        <span><c:if test="${not empty user }">
+        <span>
+            <c:if test="${not empty user }">
         			 <h4 class="user">${user.username}</h4>
 					 <a class="logout" href="${pageContext.request.contextPath}/LoginOutServlet">注销</a>
 			</c:if>
 			<c:if test="${ empty user }">
         		<h4 class="signin" data-toggle="modal" data-target="#log-wrapper">登录</h4>
             	<h4 class="signup" data-toggle="modal" data-target="#log-wrapper">注册</h4>
+                <h4 onclick="tztocargo()">|管理员登陆</h4>
+                <script>
+                    function tztocargo(){
+                        window.location.href='http://localhost:8080/cargomanagement';
+                    }
+                </script>
             </c:if>
+
+
 		</span>
     </nav>
 </header>
@@ -67,6 +76,7 @@ function tocart() {
             <div id="navs-slider">
                 <a id="#signin" class="active">登录</a>
                 <a id="#signup">注册</a>
+
                 <span class="navs-slider-bar"></span>
             </div>
             
@@ -138,6 +148,9 @@ function tocart() {
                 <div class="sign-btn">
                     <button class="sign-button submit" type="submit">注册</button>
                 </div>
+
+
+
             </form>
         </div>
     </div>

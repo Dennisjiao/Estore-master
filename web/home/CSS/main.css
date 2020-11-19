@@ -51,11 +51,11 @@ a, a:visited, a:hover {
 
 .carts {
     background: url("../img/icon.png") -100px 0px;
-    width: 40px;
+    width: 100px;
     height: 40px;
     display: block;
     position: absolute;
-    right:calc(4% + 120px);
+    right:calc(4% + 140px);
     top: calc(50% - 16px);
 }
 
@@ -106,7 +106,7 @@ h4.user, .logout {
 
 .signup {
     padding-left: 5px;
-    border-left: 2px solid #8b86ff;
+    /*border-left: 2px solid #8b86ff;*/
 }
 
 header {
