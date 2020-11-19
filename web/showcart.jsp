@@ -122,7 +122,7 @@ function changeCount(id, count, pnum) {
 		location.href="order.jsp";
 	}
 	function tocart() {
-		location.href="http://localhost:8080/Estore_Web_exploded/showcart.jsp";
+		location.href="http://localhost:8099/Estore_Web_exploded/showcart.jsp";
 	}
 	function phone(obj) {
 		location.href="${pageContext.request.contextPath}/FindCategoryServlet?name="+encodeURIComponent(encodeURIComponent(obj));

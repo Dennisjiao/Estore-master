@@ -39,7 +39,7 @@ public class UserActiveServlet extends HttpServlet {
             service.activeUser(activeCode);
 
             response.getWriter().write(
-                    "激活成功，请回<a href='http://localhost:8080/Estore_Web_exploded'>首页</a>");
+                    "激活成功，请回<a href='http://localhost:8099/Estore_Web_exploded'>首页</a>");
             return;
 
         } catch (ActiveCodeException e) {
