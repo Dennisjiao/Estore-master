@@ -214,7 +214,7 @@ nav span {
     overflow: hidden;
     position: fixed;
     top: calc(50% - 304px);
-    left: calc(50% - 300px);
+    left: calc(50% - 200px);
     border: 4px solid #8097ec;
 }
 
