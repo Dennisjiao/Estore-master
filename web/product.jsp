@@ -135,6 +135,7 @@ function tocart() {
 </div>
 <!--登录注册END-->
 
+<!--整page内容-->
 <section class="page">
     <aside id="aside" class="panel-group aside-menu">
         <h3 class="type">${c1name }</h3>
@@ -150,6 +151,7 @@ function tocart() {
         </c:forEach>
     </aside>
 
+<!--商品内容栏-->
     <div class="content">
         <c:forEach items="${pb1.pro}" var="p" varStatus="vs">
 				<div class="product">
@@ -161,6 +163,7 @@ function tocart() {
 				</div>
 		</c:forEach>
     </div>
+
     <ul class="pagination">
         <li><a href="${pageContext.request.contextPath}/ProductFindByPageCodeServlet?pageNum=1&currentPage=${pb1.currentPage}">首页</a></li>
 		<li><c:if test="${pb1.pageNum==1}"><a>上一页</a></c:if></li>
@@ -172,6 +175,7 @@ function tocart() {
 		</c:if></li>
     </ul>
 </section>
+
 <aside class="aside-tool">
     <ul>
         <li class="customer">
