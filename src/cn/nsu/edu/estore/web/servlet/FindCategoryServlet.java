@@ -45,7 +45,7 @@ public class FindCategoryServlet extends HttpServlet {
                 code="53";
             }else if(c1name.equals("配件")){
                 code="54";
-            }else if(c1name.equals("猜你喜欢")){
+            }else if(c1name.equals("Yourlike")){
                 code="55";
             }
 

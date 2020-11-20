@@ -44,7 +44,7 @@ function tocart() {
         <a href="javascript:void(0)" onclick="phone('平板')">平板</a>
         <a href="javascript:void(0)" onclick="phone('笔记本')">笔记本</a>
         <a href="javascript:void(0)" onclick="phone('配件')">配件</a>
-        <a href="javascript:void(0)" onclick="phone('猜你喜欢')">猜你喜欢</a>
+        <a href="javascript:void(0)" onclick="phone('Yourlike')">Yourlike</a>
         <i class="carts" onclick="tocart()"></i>
         <span>
             <c:if test="${not empty user }">
@@ -164,7 +164,7 @@ function tocart() {
         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
         <li data-target="#carousel-example-generic" data-slide-to="3"></li>
         <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
     </ol>
 
     <!-- Wrapper for slides -->
@@ -314,12 +314,13 @@ function tocart() {
     </div>
 </section>
 
+<!--
 //推荐算法
 <section class="sec4">
     <h3>猜你喜欢</h3>
     <a href="javascript:void(0)" onclick="phone('猜你喜欢')">猜你喜欢</a>
     <div>
-        <c:forEach items="${pro3}" var="p" varStatus="vs" begin="0" end="4" step="1">
+        <c:forEach items="${pro5}" var="p" varStatus="vs" begin="0" end="4" step="1">
             <c:if test="${fn:substring(p.c3code,0,2)=='55' }">
                 <div class="product">
                     <img src="/upload/${p.imgurl}" onclick="findProductById('${p.id}')">
@@ -332,7 +333,7 @@ function tocart() {
         </c:forEach>
     </div>
 </section>
-
+-->
 
 <aside class="aside-tool">
     <ul>
