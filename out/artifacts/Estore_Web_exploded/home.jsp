@@ -44,6 +44,7 @@ function tocart() {
         <a href="javascript:void(0)" onclick="phone('平板')">平板</a>
         <a href="javascript:void(0)" onclick="phone('笔记本')">笔记本</a>
         <a href="javascript:void(0)" onclick="phone('配件')">配件</a>
+        <a href="javascript:void(0)" onclick="phone('猜你喜欢')">猜你喜欢</a>
         <i class="carts" onclick="tocart()"></i>
         <span>
             <c:if test="${not empty user }">
@@ -148,9 +149,6 @@ function tocart() {
                 <div class="sign-btn">
                     <button class="sign-button submit" type="submit">注册</button>
                 </div>
-
-
-
             </form>
         </div>
     </div>
@@ -312,6 +310,23 @@ function tocart() {
         </div>
         <span class="wrap-left"></span>
         <span class="wrap-right"></span>
+    </div>
+</section>
+<section class="sec4">
+    <h3>猜你喜欢</h3>
+    <a href="javascript:void(0)" onclick="phone('猜你喜欢')">猜你喜欢</a>
+    <div>
+        <c:forEach items="${pro2}" var="p" varStatus="vs" begin="0" end="4" step="1">
+            <c:if test="${fn:substring(p.c3code,0,2)=='66' }">
+                <div class="product">
+                    <img src="/upload/${p.imgurl}" onclick="findProductById('${p.id}')">
+                    <span class="brand">${p.name}</span>
+                    <span class="title">${p.description}</span>
+                    <span class="price">${p.price}</span>
+                    <a href="${pageContext.request.contextPath}/ProductFindByIdServlet?id=${p.id}"><em class="fast-buy"></em></a>
+                </div>
+            </c:if>
+        </c:forEach>
     </div>
 </section>
 <aside class="aside-tool">
