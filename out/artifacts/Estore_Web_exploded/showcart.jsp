@@ -139,7 +139,7 @@ function changeCount(id, count, pnum) {
         <a href="javascript:void(0)" onclick="phone('平板')">平板</a>
         <a href="javascript:void(0)" onclick="phone('笔记本')">笔记本</a>
         <a href="javascript:void(0)" onclick="phone('配件')">配件</a>
-        <a href="javascript:void(0)" onclick="phone('配件')">猜你喜欢</a>
+        <a href="javascript:void(0)" onclick="phone('猜你喜欢')">猜你喜欢</a>
         <span class="slider-bar"></span>
         <i class="carts" onclick="tocart()"></i>
         <span><c:if test="${not empty user }">

@@ -45,6 +45,8 @@ public class FindCategoryServlet extends HttpServlet {
                 code="53";
             }else if(c1name.equals("配件")){
                 code="54";
+            }else if(c1name.equals("猜你喜欢")){
+                code="55";
             }
 
             List<HashMap<String, Object>> c2name = service.getNextName(code);

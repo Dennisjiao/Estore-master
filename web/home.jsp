@@ -312,12 +312,14 @@ function tocart() {
         <span class="wrap-right"></span>
     </div>
 </section>
+
+//推荐算法
 <section class="sec4">
     <h3>猜你喜欢</h3>
     <a href="javascript:void(0)" onclick="phone('猜你喜欢')">猜你喜欢</a>
     <div>
-        <c:forEach items="${pro2}" var="p" varStatus="vs" begin="0" end="4" step="1">
-            <c:if test="${fn:substring(p.c3code,0,2)=='66' }">
+        <c:forEach items="${pro3}" var="p" varStatus="vs" begin="0" end="4" step="1">
+            <c:if test="${fn:substring(p.c3code,0,2)=='55' }">
                 <div class="product">
                     <img src="/upload/${p.imgurl}" onclick="findProductById('${p.id}')">
                     <span class="brand">${p.name}</span>
@@ -329,6 +331,8 @@ function tocart() {
         </c:forEach>
     </div>
 </section>
+
+
 <aside class="aside-tool">
     <ul>
         <li class="customer">
