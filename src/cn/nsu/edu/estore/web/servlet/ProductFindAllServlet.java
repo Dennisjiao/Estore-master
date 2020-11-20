@@ -46,6 +46,10 @@ public class ProductFindAllServlet extends HttpServlet {
 
             request.setAttribute("pro4", pro4);
 
+            List<Product> pro5 = service.findByCode("55");
+
+            request.setAttribute("pro5", pro5);
+
             User user = (User) request.getSession().getAttribute("user");
 
             if (user == null || user.getRole().equals("user")) {

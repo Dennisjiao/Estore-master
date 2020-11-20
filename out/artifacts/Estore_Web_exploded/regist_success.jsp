@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>注册成功3秒后跳转</title>
-<meta http-equiv="refresh" content="3;url=http://localhost:8080/Estore_Web_exploded">
+<meta http-equiv="refresh" content="3;url=http://localhost:8099/Estore_Web_exploded">
 </head>
 <body>
 <h1>
