@@ -9,7 +9,7 @@
 </head>
 <body>
 <h1>
-		注册成功，<span id="s">3</span>秒后跳转到<a href='http://localhost:8080/Estore_Web_exploded'>首页</a>
+		注册成功，<span id="s">3</span>秒后跳转到<a href='http://localhost:8099/Estore_Web_exploded'>首页</a>
 </h1>
 <script type="text/javascript">
 	var interval;
