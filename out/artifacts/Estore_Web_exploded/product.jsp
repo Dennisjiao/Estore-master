@@ -151,7 +151,7 @@ function tocart() {
         </c:forEach>
     </aside>
 
-<!--商品内容栏
+<!--商品内容栏-->
     <div class="content">
         <c:forEach items="${pb1.pro}" var="p" varStatus="vs">
 				<div class="product">
@@ -163,25 +163,6 @@ function tocart() {
 				</div>
 		</c:forEach>
     </div>
-    -->
-    <section class="sec2">
-        <h3>手机</h3>
-        <a href="javascript:void(0)" onclick="phone('手机')">手机</a>
-        <div>
-            <c:set var="s" value="100"></c:set>
-            <c:forEach items="${pro1}" var="p" varStatus="vs" begin="0" end="3" step="1">
-                <c:if test="${fn:substring(p.c3code,0,2)=='51' }">
-                    <div class="product">
-                        <img src="/upload/${p.imgurl}" onclick="findProductById('${p.id}')">
-                        <span class="brand">${p.name}</span>
-                        <span class="title">${p.description}</span>
-                        <span class="price">${p.price}</span>
-                        <a href="${pageContext.request.contextPath}/ProductFindByIdServlet?id=${p.id}"><em class="fast-buy"></em></a>
-                    </div>
-                </c:if>
-            </c:forEach>
-        </div>
-    </section>
 
     <ul class="pagination">
         <li><a href="${pageContext.request.contextPath}/ProductFindByPageCodeServlet?pageNum=1&currentPage=${pb1.currentPage}">首页</a></li>
