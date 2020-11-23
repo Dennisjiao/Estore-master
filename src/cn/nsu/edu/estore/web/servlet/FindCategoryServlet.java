@@ -39,11 +39,11 @@ public class FindCategoryServlet extends HttpServlet {
 
             //String code = node.getCode();
             String code="51";
-            if(c1name.equals("平板")){
+            if(c1name.equals("日用")){
                 code="52";
-            }else if(c1name.equals("笔记本")){
+            }else if(c1name.equals("服装")){
                 code="53";
-            }else if(c1name.equals("配件")){
+            }else if(c1name.equals("食品")){
                 code="54";
             }else if(c1name.equals("Yourlike")){
                 code="55";

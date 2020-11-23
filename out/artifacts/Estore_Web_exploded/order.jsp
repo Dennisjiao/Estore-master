@@ -14,10 +14,10 @@
     <nav class="navbar navbar-inverse" role="navigation">
      <div class="logo"></div>
         <a href="ProductFindAllServlet">首页</a>
-        <a href="javascript:void(0)" onclick="phone('手机')">手机</a>
-        <a href="javascript:void(0)" onclick="phone('平板')">平板</a>
-        <a href="javascript:void(0)" onclick="phone('笔记本')">笔记本</a>
-        <a href="javascript:void(0)" onclick="phone('配件')">配件</a>
+        <a href="javascript:void(0)" onclick="phone('电器')">电器</a>
+        <a href="javascript:void(0)" onclick="phone('日用')">日用</a>
+        <a href="javascript:void(0)" onclick="phone('服装')">服装</a>
+        <a href="javascript:void(0)" onclick="phone('食品')">食品</a>
         <a href="javascript:void(0)" onclick="phone('Yourlike')">Yourlike</a>
         <span class="slider-bar"></span>
         <i class="carts" onclick="tocart()"></i>

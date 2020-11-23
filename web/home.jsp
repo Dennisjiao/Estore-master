@@ -40,10 +40,10 @@ function tocart() {
     <nav class="navbar navbar-inverse" role="navigation">
     	 <div class="logo"></div>
         <a href="#">首页</a>
-        <a href="javascript:void(0)" onclick="phone('手机')">手机</a>
-        <a href="javascript:void(0)" onclick="phone('平板')">平板</a>
-        <a href="javascript:void(0)" onclick="phone('笔记本')">笔记本</a>
-        <a href="javascript:void(0)" onclick="phone('配件')">配件</a>
+        <a href="javascript:void(0)" onclick="phone('电器')">电器</a>
+        <a href="javascript:void(0)" onclick="phone('日用')">日用</a>
+        <a href="javascript:void(0)" onclick="phone('服装')">服装</a>
+        <a href="javascript:void(0)" onclick="phone('食品')">食品</a>
         <a href="javascript:void(0)" onclick="phone('Yourlike')">Yourlike</a>
         <i class="carts" onclick="tocart()"></i>
         <span>
@@ -170,31 +170,37 @@ function tocart() {
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img src="home/img/22d94f6e50d98f6f68308814ff9795e2.jpg" alt="..." onclick="phone('手机')">
+            <img src="home/img/22d94f6e50d98f6f68308814ff9795e2.jpg" alt="..." onclick="phone('电器')">
             <div class="carousel-caption">
 
             </div>
         </div>
         <div class="item">
-            <img src="home/img/macbookpro_large.jpg" alt="..." onclick="phone('笔记本')">
+            <img src="home/img/macbookpro_large.jpg" alt="..." onclick="phone('食品')">
             <div class="carousel-caption">
 
             </div>
         </div>
         <div class="item">
-            <img src="home/img/iphone_square_large.jpg" alt="..." onclick="phone('手机')">
+            <img src="home/img/iphone_square_large.jpg" alt="..." onclick="phone('电器')">
             <div class="carousel-caption">
             </div>
         </div>
 
         <div class="item">
-        <img src="home/img/holiday_hero_subhead_2a_largetall.jpg" alt="..." onclick="phone('手机')">
+        <img src="home/img/holiday_hero_subhead_2a_largetall.jpg" alt="..." onclick="phone('电器')">
         <div class="carousel-caption">
         </div>
         </div>
 
         <div class="item">
-            <img src="home/img/tile_macos_large.jpg" alt="..." onclick="phone('手机')">
+            <img src="home/img/tile_macos_large.jpg" alt="..." onclick="phone('服装')">
+            <div class="carousel-caption">
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="home/img/e557c50318135d0f705498c91ae62852.jpg" alt="..." onclick="phone('电器')">
             <div class="carousel-caption">
             </div>
         </div>
@@ -219,8 +225,8 @@ function tocart() {
     <a><img src="home/img/62f38e9081afaf20535678571aaf6b3b.jpg" onclick="findProductById('5')"></a>
 </section>
 <section class="sec2">
-    <h3>手机</h3>
-    <a href="javascript:void(0)" onclick="phone('手机')">手机</a>
+    <h3>电器</h3>
+    <a href="javascript:void(0)" onclick="phone('电器')">电器</a>
     <div>
     <c:set var="s" value="100"></c:set>
         	<c:forEach items="${pro1}" var="p" varStatus="vs" begin="0" end="4" step="1">
@@ -237,8 +243,8 @@ function tocart() {
     </div>
 </section>
 <section class="sec2">
-    <h3>平板</h3>
-    <a href="javascript:void(0)" onclick="phone('平板')">平板</a>
+    <h3>日用</h3>
+    <a href="javascript:void(0)" onclick="phone('日用')">日用</a>
     <div>
         <c:forEach items="${pro2}" var="p" varStatus="vs" begin="0" end="4" step="1">
         	<c:if test="${fn:substring(p.c3code,0,2)=='52' }">
@@ -254,8 +260,8 @@ function tocart() {
     </div>
 </section>
 <section class="sec2">
-    <h3>笔记本</h3>
-   	<a href="javascript:void(0)" onclick="phone('笔记本')">笔记本</a>
+    <h3>服装</h3>
+   	<a href="javascript:void(0)" onclick="phone('服装')">服装</a>
     <div>
         <c:forEach items="${pro3}" var="p" varStatus="vs" begin="0" end="4" step="1">
         	<c:if test="${fn:substring(p.c3code,0,2)=='53' }">
@@ -271,8 +277,8 @@ function tocart() {
     </div>
 </section>
 <section class="sec3">
-    <h3>配件</h3>
-    <a href="javascript:void(0)" onclick="phone('配件')">配件</a>
+    <h3>食品</h3>
+    <a href="javascript:void(0)" onclick="phone('食品')">食品</a>
     <div class="wrap">
         <div class="slide">
             <ul>
