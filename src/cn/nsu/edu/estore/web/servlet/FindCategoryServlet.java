@@ -31,7 +31,7 @@ public class FindCategoryServlet extends HttpServlet {
             request.setCharacterEncoding("utf-8");
             response.setContentType("text/html;utf-8");
             String c1name = request.getParameter("name");
-            c1name = URLDecoder.decode(c1name, "utf-8");
+            c1name = URLDecoder.decode(c1name,"utf-8");
 
 
             request.getSession().setAttribute("c1name", c1name);

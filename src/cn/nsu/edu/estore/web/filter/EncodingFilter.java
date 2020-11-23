@@ -33,6 +33,8 @@ public class EncodingFilter implements Filter {
         // 处理响应乱码
         response.setContentType("text/html;charset=utf-8");
 
+        response.setCharacterEncoding("UTF-8");
+
         chain.doFilter(myRequest, response);
     }
 
