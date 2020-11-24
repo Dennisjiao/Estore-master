@@ -52,12 +52,12 @@ function tocart() {
 					 <a class="logout" href="${pageContext.request.contextPath}/LoginOutServlet">注销</a>
 			</c:if>
 			<c:if test="${ empty user }">
-        		<h4 class="signin" data-toggle="modal" data-target="#log-wrapper">登录</h4>
-            	<h4 class="signup" data-toggle="modal" data-target="#log-wrapper">注册</h4>
+                <h4 class="signin" data-toggle="modal" data-target="#log-wrapper">登录</h4>
+                <h4 class="signup" data-toggle="modal" data-target="#log-wrapper">注册</h4>
                 <h4 onclick="tztocargo()">|管理员登陆</h4>
                 <script>
                     function tztocargo(){
-                        window.location.href='http://localhost:8080/cargomanagement';
+                        window.location.href='http://101.132.142.230:8080/cargomanagement';
                     }
                 </script>
             </c:if>
