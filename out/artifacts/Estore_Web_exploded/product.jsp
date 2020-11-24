@@ -50,6 +50,12 @@ function tocart() {
 			<c:if test="${ empty user }">
         		<h4 class="signin" data-toggle="modal" data-target="#log-wrapper">登录</h4>
             	<h4 class="signup" data-toggle="modal" data-target="#log-wrapper">注册</h4>
+                <h4 onclick="tztocargo()">|管理员登陆</h4>
+                <script>
+                    function tztocargo(){
+                        window.location.href='http://localhost:8080/cargomanagement';
+                    }
+                </script>
             </c:if>
 		</span>
     </nav>

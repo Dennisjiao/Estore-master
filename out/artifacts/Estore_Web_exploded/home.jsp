@@ -314,14 +314,14 @@ function tocart() {
                 
             </ul>
 
+
         </div>
         <span class="wrap-left"></span>
         <span class="wrap-right"></span>
     </div>
 </section>
 
-
-//推荐算法
+<!--主页推荐板块-->
 <section class="sec2">
     <h3>猜你喜欢</h3>
     <a href="javascript:void(0)" onclick="phone('猜你喜欢')">猜你喜欢</a>

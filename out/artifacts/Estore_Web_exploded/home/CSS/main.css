@@ -119,12 +119,12 @@ header {
 }
 
 .logo{
-    height: 60px;
+    height: 120px;
     width: 180px;
     background: url("../img/logo1.png") no-repeat;
     position: absolute;
     left: 4%;
-    top: calc(50% - 30px);
+    top: calc(50% - 35px);
 }
 
 header nav > a {
@@ -561,7 +561,7 @@ section.sec1 {
 }
 
 .wrap ul {
-    width: 1175px;
+    width: 1200px;
     height: 337px;
     position: absolute;
 
@@ -569,7 +569,7 @@ section.sec1 {
 
 .sec3 li {
     float: left;
-    display: inline-table;
+
 }
 
 .wrap ul:first-child {
