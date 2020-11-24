@@ -219,10 +219,10 @@ function tocart() {
 </div>
 
 <section class="sec1">
-    <a><img src="home/img/8cbbaae5979d138dbc9e9616a06ba125.png" onclick="findProductById('26')"></a>
-    <a><img src="home/img/387064f7e285263ac3ef81dd09baf5e4.png" onclick="findProductById('27')"></a>
-    <a><img src="home/img/dd1c6b91990dee6177ad2ef4c1fb076e.png" onclick="findProductById('1')"></a>
-    <a><img src="home/img/62f38e9081afaf20535678571aaf6b3b.jpg" onclick="findProductById('5')"></a>
+    <a><img src="home/img/8cbbaae5979d138dbc9e9616a06ba125.jpg" onclick="findProductById('31')"></a>
+    <a><img src="home/img/387064f7e285263ac3ef81dd09baf5e4.jpg" onclick="findProductById('26')"></a>
+    <a><img src="home/img/dd1c6b91990dee6177ad2ef4c1fb076e.jpg" onclick="findProductById('66')"></a>
+    <a><img src="home/img/62f38e9081afaf20535678571aaf6b3b.jpg" onclick="findProductById('1')"></a>
 </section>
 <section class="sec2">
     <h3>电器</h3>
