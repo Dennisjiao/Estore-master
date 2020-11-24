@@ -320,9 +320,8 @@ function tocart() {
     </div>
 </section>
 
-<!--
-//推荐算法
-<section class="sec4">
+<!--主页推荐板块-->
+<section class="sec2">
     <h3>猜你喜欢</h3>
     <a href="javascript:void(0)" onclick="phone('猜你喜欢')">猜你喜欢</a>
     <div>
@@ -339,7 +338,7 @@ function tocart() {
         </c:forEach>
     </div>
 </section>
--->
+
 
 <aside class="aside-tool">
     <ul>
