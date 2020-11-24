@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="war" name="Estore">
-    <output-path>$PROJECT_DIR$/..</output-path>
+    <output-path>$PROJECT_DIR$/../导出包</output-path>
     <root id="archive" name="Estore.war">
       <element id="dir-copy" path="$PROJECT_DIR$/.." />
     </root>
