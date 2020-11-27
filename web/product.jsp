@@ -174,6 +174,8 @@ function tocart() {
 		<li><c:if test="${pb1.pageNum==1}"><a>上一页</a></c:if></li>
 		<li><c:if test="${pb1.pageNum!=1}"><a href="${pageContext.request.contextPath}/ProductFindByPageCodeServlet?pageNum=${pb1.pageNum-1}&currentPage=${pb1.currentPage}">上一页</a></c:if></li>
 		<c:if test="${pb1.pageNum==pb1.totalPage}"><li><a>下一页</a></li><li><a>尾页</a></li></c:if>
+
+        <c:if test="${pb1.pageNum==1}"><li><a>第1页</a></c:if></li>
 		<li><c:if test="${pb1.pageNum!=pb1.totalPage}">
 			<a href="${pageContext.request.contextPath}/ProductFindByPageCodeServlet?pageNum=${pb1.pageNum+1 }&currentPage=${pb1.currentPage}">下一页</a>
 			<a href="${pageContext.request.contextPath}/ProductFindByPageCodeServlet?pageNum=${pb1.totalPage }&currentPage=${pb1.currentPage}">尾页</a>
