@@ -26,19 +26,20 @@
     position: absolute;
     top:20px;
     background-size:100px 50px;
-    left:0;
+    left:10px;
 }
 footer dlb{
     left:300px;
+    position: absolute;
 }
 .dlb img{
 
     max-width:250px;
     max-height:300px;
     position: absolute;
-    top:20px;
-    background-size:100px 50px;
-    left:0;
+    top:70px;
+    left:1250px;
+
 }
 /*底栏结束*/
 
@@ -1521,7 +1522,7 @@ footer {
 
 footer div{
     width: 900px;
-    height: 200px;
+    height: 0px;
     margin: 0 auto;
 }
 
