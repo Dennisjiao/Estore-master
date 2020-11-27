@@ -3,6 +3,7 @@
     <output-path>$PROJECT_DIR$/../导出包</output-path>
     <root id="archive" name="Estore_Web_exploded.war">
       <element id="artifact" artifact-name="Estore:Web exploded" />
+      <element id="dir-copy" path="$PROJECT_DIR$/web/META-INF" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="dir-copy" path="$PROJECT_DIR$/upload" />
@@ -11,7 +12,6 @@
           <element id="library" level="project" name="servlet-api" />
         </element>
       </element>
-      <element id="dir-copy" path="$PROJECT_DIR$/web/META-INF" />
     </root>
   </artifact>
 </component>
