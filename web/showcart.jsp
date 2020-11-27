@@ -122,7 +122,7 @@ function changeCount(id, count, pnum) {
 		location.href="order.jsp";
 	}
 	function tocart() {
-		location.href="http://localhost:8099/Estore_Web_exploded/showcart.jsp";
+		location.href="http://101.132.142.230:8099/Estore_Web_exploded/showcart.jsp";
 	}
 	function phone(obj) {
 		location.href="${pageContext.request.contextPath}/FindCategoryServlet?name="+encodeURIComponent(encodeURIComponent(obj));
@@ -238,7 +238,11 @@ function changeCount(id, count, pnum) {
 
 
 	<c:if test="${ empty cart }">
-	购物车中没有商品
+        <section class="contine-box">
+            您的购物车里还没有商品
+
+            <a class="continue" href='http://101.132.142.230:8099/Estore_Web_exploded'>继续购物</a>
+        </section>
 	</c:if>
  <!-- 购物车里有数据时的操作			START -->
 <c:if test="${not empty cart}">
@@ -282,9 +286,9 @@ function changeCount(id, count, pnum) {
             <li>
                 <ul class="carts-type">
                     <li><span>颜色</span><a>${c.key.color}</a></li>
-                    <li><span>内存</span><a>64G</a></li>
-                    <li><span>版本</span><a>联通4G/移动4G/电信4G</a></li>
-                    <li><span>销售地区</span><a>加拿大</a></li>
+                    <li><span>品质</span><a>A+</a></li>
+                    <li><span>商家</span><a>河北地质大学天猫超市</a></li>
+                    <li><span>销售地区</span><a>河北省</a></li>
                 </ul>
             </li>
             <li><span class="price">${c.key.price }</span></li>
@@ -345,22 +349,7 @@ function changeCount(id, count, pnum) {
         <li class="top"></li>
     </ul>
 </aside>
-<footer>
-   <div>
-       <ul>
-           <li>开发人员1</li>
-           <li>焦瑞鹏</li>
-       </ul>
-       <ul>
-           <li>开发人员2</li>
-           <li>刘佳雷</li>
-       </ul>
-       <ul>
-           <li>开发人员3</li>
-           <li>谢晨祎</li>
-       </ul>
-    </div>
-</footer>
+
 <script type="text/javascript" src="home/JS/jquery.min.js"></script>
 <script type="text/javascript" src="home/JS/jquery-ui.js"></script>
 <script type="text/javascript" src="home/JS/bootstrap.min.js"></script>

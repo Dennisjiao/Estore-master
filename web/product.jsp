@@ -18,13 +18,13 @@ function change() {
 			+ new Date().getTime();
 }
 function findProductById(id){
-	location.href="http://localhost:8099/Estore_Web_exploded/ProductFindByIdServlet?id="+id;
+	location.href="http://101.132.142.230:8099/Estore_Web_exploded/ProductFindByIdServlet?id="+id;
 }
 function showck(obj) {
-	location.href="http://localhost:8099/Estore_Web_exploded/ProductFindByPageCodeServlet?code="+obj;
+	location.href="http://101.132.142.230:8099/Estore_Web_exploded/ProductFindByPageCodeServlet?code="+obj;
 }
 function tocart() {
-	location.href="http://localhost:8099/Estore_Web_exploded/showcart.jsp";
+	location.href="http://101.132.142.230:8099/Estore_Web_exploded/showcart.jsp";
 }
 </script>
 </head>
@@ -156,17 +156,16 @@ function tocart() {
         	</dl>
         </c:forEach>
     </aside>
-
 <!--商品内容栏-->
     <div class="content">
         <c:forEach items="${pb1.pro}" var="p" varStatus="vs">
 				<div class="product">
-					<img src="/upload/${p.imgurl}" onclick="findProductById('${p.id}')">
-        			<span class="brand">${p.name}</span>
-        			<span class="title">${p.description}</span>
-        			<span class="price">${p.price}</span>
-        			<a href="${pageContext.request.contextPath}/ProductFindByIdServlet?id=${p.id}"><em class="fast-buy"></em></a>
-				</div>
+                          <img src="/upload/${p.imgurl}" onclick="findProductById('${p.id}')">
+                          <span class="brand">${p.name}</span>
+                          <span class="title">${p.description}</span>
+                          <span class="price">${p.price}</span>
+                          <a href="${pageContext.request.contextPath}/ProductFindByIdServlet?id=${p.id}"><em class="fast-buy"></em></a>
+                </div>
 		</c:forEach>
     </div>
 

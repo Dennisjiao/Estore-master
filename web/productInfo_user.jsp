@@ -22,25 +22,25 @@
                     <img src="/upload/${pro.imgurl }">
                 </li>
                 <li class="">
-                    <img src="http://img001.fview.cn/Public/upload/product/eb09f6835eb770e9106dff6b300fe2f8.jpg">
+                    <img src="/upload/${pro.imgurl }">
                 </li>
                 <li class="">
-                    <img src="http://img001.fview.cn/Public/upload/product/47bacd1fbf16cba1554d0723dddfe4fe.jpg">
+                    <img src="/upload/${pro.imgurl }">
                 </li>
                 <li class="">
-                    <img src="http://img001.fview.cn/Public/upload/product/2e94f6482d570ce355030bea44fd42fa.jpg">
+                    <img src="/upload/${pro.imgurl }">
                 </li>
                 <li class="">
-                    <img src="http://img001.fview.cn/Public/upload/product/e2c7f88b1bd6809ade50c5be45455da0.jpg">
+                    <img src="/upload/${pro.imgurl }">
                 </li>
                 <li class="">
-                    <img src="http://img001.fview.cn/Public/upload/product/4cae1678a7b505eea715486651c0f4c7.jpg">
+                    <img src="/upload/${pro.imgurl }">
                 </li>
                 <li class="">
-                    <img src="http://img001.fview.cn/Public/upload/product/fee60363efe598aa21d633a3671a4861.jpg">
+                    <img src="/upload/${pro.imgurl }">
                 </li>
                 <li class="">
-                    <img src="http://img001.fview.cn/Public/upload/product/76f87b698fe34f6447dd4e53dc052d44.jpg">
+                    <img src="/upload/${pro.imgurl }">
                 </li>
             </ul>
         </div>
@@ -53,16 +53,16 @@
 </div>
 <div class="product-details">
     <h1>${pro.description}</h1>
-    <p class="re"><span>产品编号：</span><span>RE201612101843132</span></p>
+    <p class="re"><span>产品编号：</span><span>RE202011181843132</span></p>
     <p class="price" data-price="3649">
         <span>价格</span>
         <span class="price">${pro.price }</span>
     </p>
     <ul class="details">
         <li><span>颜色</span><a class="u-check n-check">${pro.color }</a></li>
-        <li><span>内存</span><a class="u-check n-check">64G</a></li>
-        <li><span>版本</span><a class="u-check n-check">联通4G/移动4G/电信4G</a></li>
-        <li><span>销售地区</span><a class="u-check n-check">加拿大</a></li>
+        <li><span>品质</span><a class="u-check n-check">A+</a></li>
+        <li><span>商家</span><a class="u-check n-check">河北地质大学天猫超市</a></li>
+        <li><span>销售地区</span><a class="u-check n-check">河北省</a></li>
         <li><span>购买数量：</span>
             <div class="count-box">
                     <input class="min" name="" type="button" value="-"/>
