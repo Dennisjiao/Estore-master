@@ -23,7 +23,7 @@ public class UserService {
             dao.addUser(user);
             //2.向注册用户发送激活邮件
             String emailMsg = "注册成功，请点击下列连接已完成激活操作:(ps:由于邮箱原因，请复制链接打开！)"+"<br>"+
-                    "http://localhost:8099/Estore_Web_exploded/";
+                    "http:///101.132.142.230:8099/Estore_Web_exploded/";
             MailUtils.sendMail(user.getEmail(), emailMsg);
         } catch (SQLException e) {
             throw new RegistException("注册失败");
