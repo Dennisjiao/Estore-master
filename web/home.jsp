@@ -374,6 +374,14 @@ function tocart() {
             <li>谢晨祎</li>
         </ul>
     </div>
+
+    <div class="dw">
+        <h5>地址：河北省石家庄市槐安东路136号</h5>
+        <h5>邮编：050031   电话:0311-87208114(查号)</h5>
+        <h5>版权所有  © 河北地质大学 Copyright@2016,All Rights Reserved</h5>
+        <h5>冀ICP备字15002650-2号</h5>
+    </div>
+
 </footer>
 
 

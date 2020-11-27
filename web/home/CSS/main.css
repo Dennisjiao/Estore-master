@@ -32,6 +32,11 @@ footer dlb{
     left:300px;
     position: absolute;
 }
+.dw{
+    position: absolute;
+    top: 154px;
+    left: 611px;
+}
 .dlb img{
 
     max-width:250px;
@@ -1532,20 +1537,23 @@ footer ul{
     text-align: center;
     margin: 0 50px;
     float: left;
+    top:120px;
 }
 
 footer ul li:first-child{
-    font-size: 24px;
-    height: 200px;
+
+    height: 50px;
     float: left;
     padding-right: 20px;
     color: #686868;
     border-right: #444 2px solid;
+
 }
 
 footer ul li{
     color: #555555;
     font-size: 20px;
+    top:20px;
 }
 /*尾部版权END*/
 
