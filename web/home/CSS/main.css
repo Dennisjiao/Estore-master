@@ -18,6 +18,30 @@
     z-index: 9999;
 }
 
+/*底栏*/
+.dla img{
+
+    max-width:250px;
+    max-height:300px;
+    position: absolute;
+    top:20px;
+    background-size:100px 50px;
+    left:0;
+}
+footer dlb{
+    left:300px;
+}
+.dlb img{
+
+    max-width:250px;
+    max-height:300px;
+    position: absolute;
+    top:20px;
+    background-size:100px 50px;
+    left:0;
+}
+/*底栏结束*/
+
 #status {
     background: url("../img/preloader.gif") no-repeat center;
     height: 200px;

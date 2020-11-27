@@ -349,7 +349,17 @@ function tocart() {
         <li class="top"></li>
     </ul>
 </aside>
+
 <footer>
+
+    <div class="dla">
+        <a><img src="home/img/geo.png"></a>
+    </div>
+    <div class="dlb">
+        <a><img src="home/img/xxgc.png"></a>
+    </div>
+
+
    <div>
         <ul>
             <li>开发人员1</li>
@@ -365,6 +375,8 @@ function tocart() {
         </ul>
     </div>
 </footer>
+
+
 <script type="text/javascript" src="home/JS/jquery.min.js"></script>
 <script type="text/javascript" src="home/JS/jquery-ui.js"></script>
 <script type="text/javascript" src="home/JS/bootstrap.min.js"></script>
