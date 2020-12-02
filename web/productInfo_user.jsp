@@ -6,7 +6,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>单个商品详细信息</title>
-<link rel="stylesheet" type="text/css" href="home/CSS/main.css">
+    <link rel="stylesheet" type="text/css" href="home/CSS/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="home/CSS/main.css">
 </head>
 <body>
 <header>
@@ -111,6 +112,9 @@
 		
 		location.href="${pageContext.request.contextPath}/AddProductToCartServlet?id="+id;
 	}
+    function phone(obj) {
+        location.href="${pageContext.request.contextPath}/FindCategoryServlet?name="+encodeURIComponent(encodeURIComponent(obj));
+    }
 </script>
 <script type="text/javascript" src="home/JS/jquery.min.js"></script>
 <script type="text/javascript" src="home/JS/jquery-ui.js"></script>

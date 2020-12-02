@@ -12,22 +12,28 @@
 
 <header>
     <nav class="navbar navbar-inverse" role="navigation">
-     <div class="logo"></div>
+        <div class="logo"></div>
         <a href="ProductFindAllServlet">首页</a>
-        <a href="javascript:void(0)" onclick="phone('手机')">手机</a>
-        <a href="javascript:void(0)" onclick="phone('平板')">平板</a>
-        <a href="javascript:void(0)" onclick="phone('笔记本')">笔记本</a>
-        <a href="javascript:void(0)" onclick="phone('配件')">配件</a>
-        <a href="javascript:void(0)" onclick="phone('猜你喜欢')">猜你喜欢</a>
+        <a href="javascript:void(0)" onclick="phone('电器')">电器</a>
+        <a href="javascript:void(0)" onclick="phone('日用')">日用</a>
+        <a href="javascript:void(0)" onclick="phone('服装')">服装</a>
+        <a href="javascript:void(0)" onclick="phone('食品')">食品</a>
+        <a href="javascript:void(0)" onclick="phone('Yourlike')">Yourlike</a>
         <span class="slider-bar"></span>
         <i class="carts" onclick="tocart()"></i>
         <span><c:if test="${not empty user }">
-        			 <h4 class="user">${user.username}</h4>
-					 <a class="logout" href="${pageContext.request.contextPath}/LoginOutServlet">注销</a>
-			</c:if>
+            <h4 class="user">${user.username}</h4>
+            <a class="logout" href="${pageContext.request.contextPath}/LoginOutServlet">注销</a>
+        </c:if>
 			<c:if test="${ empty user }">
-        		<h4 class="signin" data-toggle="modal" data-target="#log-wrapper">登录</h4>
-            	<h4 class="signup" data-toggle="modal" data-target="#log-wrapper">注册</h4>
+                <h4 class="signin" data-toggle="modal" data-target="#log-wrapper">登录</h4>
+                <h4 class="signup" data-toggle="modal" data-target="#log-wrapper">注册</h4>
+                <h4 onclick="tztocargo()">|管理员登陆</h4>
+                <script>
+                    function tztocargo(){
+                        window.location.href='http://101.132.142.230:8080/cargomanagement';
+                    }
+                </script>
             </c:if>
 		</span>
     </nav>
@@ -99,6 +105,9 @@
 	function phone(obj) {
 		location.href="${pageContext.request.contextPath}/FindCategoryServlet?name="+encodeURIComponent(encodeURIComponent(obj));
 	}
+    function phone(obj) {
+        location.href="${pageContext.request.contextPath}/FindCategoryServlet?name="+encodeURIComponent(encodeURIComponent(obj));
+    }
 	</script>
     <script type="text/javascript" src="home/JS/jquery.min.js"></script>
     <script type="text/javascript" src="home/JS/jquery-ui.js"></script>
