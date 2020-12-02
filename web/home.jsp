@@ -7,9 +7,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>ORZ主页</title>
-<link rel="stylesheet" type="text/css" href="home/CSS/jquery-ui.css">
-<link rel="stylesheet" type="text/css" href="home/CSS/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="home/CSS/main.css">
+    <link rel="stylesheet" type="text/css" href="home/CSS/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="home/CSS/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="home/CSS/main.css">
 <script type="text/javascript">
 window.onload=function(){
 	var username=document.getElementById("username");
