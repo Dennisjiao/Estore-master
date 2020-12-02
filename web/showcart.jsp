@@ -309,7 +309,7 @@ function changeCount(id, count, pnum) {
                 </div>
 				
             </li>
-            <li><span class="price">${totalMoney+c.key.price*c.value}</span></li>
+            <li><span class="price">${c.key.price*c.value}</span></li>
             
             <li><a	href="javascript:void(0)" onclick="removeProduct('${c.key.id}')">删除</a></li>
         </ul>
