@@ -57,7 +57,7 @@ function tocart() {
                 <h4 onclick="tztocargo()">|管理员登陆</h4>
                 <script>
                     function tztocargo(){
-                        window.location.href='http://101.132.142.230:8099/cargomanagement';
+                        window.location.href='http://101.132.142.230:8080/cargomanagement';
                     }
                 </script>
             </c:if>
