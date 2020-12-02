@@ -211,13 +211,13 @@
     }
 
     function findProductById(id){
-        location.href="http://localhost:8099/Estore_Web_exploded/ProductFindByIdServlet?id="+id;
+        location.href="http://101.132.142.230:8099/Estore_Web_exploded/ProductFindByIdServlet?id="+id;
     }
     function phone(obj) {
         location.href="${pageContext.request.contextPath}/FindCategoryServlet?name="+encodeURIComponent(encodeURIComponent(obj));
     }
     function tocart() {
-        location.href="http://localhost:8099/Estore_Web_exploded/showcart.jsp";
+        location.href="http://101.132.142.230:8099/Estore_Web_exploded/showcart.jsp";
     }
     function addProductToCart(id){
 
