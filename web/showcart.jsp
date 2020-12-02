@@ -122,7 +122,7 @@ function changeCount(id, count, pnum) {
 		location.href="order.jsp";
 	}
 	function tocart() {
-		location.href="http://101.132.142.230:8099/Estore_Web_exploded/showcart.jsp";
+		location.href="http://localhost:8099/Estore_Web_exploded/showcart.jsp";
 	}
 	function phone(obj) {
 		location.href="${pageContext.request.contextPath}/FindCategoryServlet?name="+encodeURIComponent(encodeURIComponent(obj));
@@ -241,7 +241,7 @@ function changeCount(id, count, pnum) {
         <section class="contine-box">
             您的购物车里还没有商品
 
-            <a class="continue" href='http://101.132.142.230:8099/Estore_Web_exploded'>继续购物</a>
+            <a class="continue" href='http://localhost:8099/Estore_Web_exploded'>继续购物</a>
         </section>
 	</c:if>
  <!-- 购物车里有数据时的操作			START -->

@@ -22,13 +22,13 @@ function change() {
 }
 
 function findProductById(id){
-	location.href="http://101.132.142.230:8099/Estore_Web_exploded/ProductFindByIdServlet?id="+id;
+	location.href="http://localhost:8099/Estore_Web_exploded/ProductFindByIdServlet?id="+id;
 }
 function phone(obj) {
 	location.href="${pageContext.request.contextPath}/FindCategoryServlet?name="+encodeURIComponent(encodeURIComponent(obj));
 }
 function tocart() {
-	location.href="http://101.132.142.230:8099/Estore_Web_exploded/showcart.jsp";
+	location.href="http://localhost:8099/Estore_Web_exploded/showcart.jsp";
 }
 </script>
 </head>
@@ -57,7 +57,7 @@ function tocart() {
                 <h4 onclick="tztocargo()">|管理员登陆</h4>
                 <script>
                     function tztocargo(){
-                        window.location.href='http://101.132.142.230:8080/cargomanagement';
+                        window.location.href='http://localhost:8099/cargomanagement';
                     }
                 </script>
             </c:if>
