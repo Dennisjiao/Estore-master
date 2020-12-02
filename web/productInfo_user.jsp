@@ -9,7 +9,28 @@
 <link rel="stylesheet" type="text/css" href="home/CSS/main.css">
 </head>
 <body>
-
+<header>
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="logo"></div>
+        <a href="ProductFindAllServlet">首页</a>
+        <a href="javascript:void(0)" onclick="phone('电器')">电器</a>
+        <a href="javascript:void(0)" onclick="phone('日用')">日用</a>
+        <a href="javascript:void(0)" onclick="phone('服装')">服装</a>
+        <a href="javascript:void(0)" onclick="phone('食品')">食品</a>
+        <a href="javascript:void(0)" onclick="phone('Yourlike')">Yourlike</a>
+        <span class="slider-bar"></span>
+        <i class="carts" onclick="tocart()"></i>
+        <span><c:if test="${not empty user }">
+            <h4 class="user">${user.username}</h4>
+            <a class="logout" href="${pageContext.request.contextPath}/LoginOutServlet">注销</a>
+        </c:if>
+			<c:if test="${ empty user }">
+                <h4 class="signin" data-toggle="modal" data-target="#log-wrapper">登录</h4>
+                <h4 class="signup" data-toggle="modal" data-target="#log-wrapper">注册</h4>
+            </c:if>
+		</span>
+    </nav>
+</header>
 <section class="w">
 <div class="product-img">
     <div class="handle">

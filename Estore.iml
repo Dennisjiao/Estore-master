@@ -39,10 +39,25 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
-    <orderEntry type="library" name="lib" level="application" />
-    <orderEntry type="library" name="lib1" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="Tomcat 9.0.35" level="application_server_libraries" />
-    <orderEntry type="library" name="servlet-api" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Tomcat9/lib/servlet-api.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/Tomcat9/lib/tomcat-api.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
     <orderEntry type="library" name="tomcat-api" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Tomcat 9.0.35" level="application_server_libraries" />
   </component>
 </module>
