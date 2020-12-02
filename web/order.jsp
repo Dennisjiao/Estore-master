@@ -12,7 +12,7 @@
 <body>
 <header>
     <nav class="navbar navbar-inverse" role="navigation">
-     <div class="logo"></div>
+        <div class="logo"></div>
         <a href="ProductFindAllServlet">首页</a>
         <a href="javascript:void(0)" onclick="phone('电器')">电器</a>
         <a href="javascript:void(0)" onclick="phone('日用')">日用</a>
@@ -22,12 +22,18 @@
         <span class="slider-bar"></span>
         <i class="carts" onclick="tocart()"></i>
         <span><c:if test="${not empty user }">
-        			 <h4 class="user">${user.username}</h4>
-					 <a class="logout" href="${pageContext.request.contextPath}/LoginOutServlet">注销</a>
-			</c:if>
+            <h4 class="user">${user.username}</h4>
+            <a class="logout" href="${pageContext.request.contextPath}/LoginOutServlet">注销</a>
+        </c:if>
 			<c:if test="${ empty user }">
-        		<h4 class="signin" data-toggle="modal" data-target="#log-wrapper">登录</h4>
-            	<h4 class="signup" data-toggle="modal" data-target="#log-wrapper">注册</h4>
+                <h4 class="signin" data-toggle="modal" data-target="#log-wrapper">登录</h4>
+                <h4 class="signup" data-toggle="modal" data-target="#log-wrapper">注册</h4>
+                <h4 onclick="tztocargo()">|管理员登陆</h4>
+                <script>
+                    function tztocargo(){
+                        window.location.href='http://101.132.142.230:8080/cargomanagement';
+                    }
+                </script>
             </c:if>
 		</span>
     </nav>
