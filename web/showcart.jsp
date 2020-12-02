@@ -291,6 +291,7 @@ function changeCount(id, count, pnum) {
                     <li><span>销售地区</span><a>河北省</a></li>
                 </ul>
             </li>
+<!--价格计算-->
             <li><span class="price">${c.key.price }</span></li>
             <li>
             

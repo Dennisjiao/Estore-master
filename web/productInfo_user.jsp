@@ -219,6 +219,10 @@
     function tocart() {
         location.href="http://localhost:8099/Estore_Web_exploded/showcart.jsp";
     }
+    function addProductToCart(id){
+
+        location.href="${pageContext.request.contextPath}/AddProductToCartServlet?id="+id;
+    }
 </script>
 <script type="text/javascript" src="home/JS/jquery.min.js"></script>
 <script type="text/javascript" src="home/JS/jquery-ui.js"></script>
